@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Users</title>
+</head>
+<body>
+
+
+    <h1><p><%=@user.name%></p></h1>
+    <p><%=@user.how_old%></p>
+    <p><%=@user.bio%></p>
+
+    <h4>Created on: <%=@user.created_at%></h4>
+    <h4>Created on: <%=@user.updated_at%></h4>
+<p><a href="/users/">Back</a></p>
+    <p><%= link_to "Edit User", edit_user_path%></p>
+
+    </body>
+
+</html>

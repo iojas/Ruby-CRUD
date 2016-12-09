@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Users</title>
+</head>
+<body>
+<h2>Here's the list of All users</h2>
+<% @users.each do |f| %>
+<ul>
+  <li>
+    <a href="/users/<%=f.id%>"><%=f.name%></a>
+  </li>
+</ul>
+<%end%>
+
+<p><a href="/">Back</a> | <a href="/users/new/"> Add User </a>
+
+    </body>
+
+</html>
